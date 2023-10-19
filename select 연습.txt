@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function getValue() {
+            //
+        }
+    </script>
+</head>
+<body>
+    <select id="myList">
+        <option value="학생">학생</option>
+        <option value="직장인" SELECTED>직장인</option>
+        <option value="전문직">전문직</option>
+        <option value="무직">무직</option>
+    </select>
+    <input type="button" onClick="getValue()" value="클릭">
+    <input type="text" id="result" value="">
+</body>
+</html>

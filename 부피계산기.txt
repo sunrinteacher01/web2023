@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <script>
+        function calc() {
+            let result;
+            let radius = document.getElementById('radius').value;
+            let list = document.getElementsByName('shape');
+            //작성
+        } 
+    </script>
+</head>
+<body>
+    반지름<input type="text"name="radius"id="radius">
+        <input type="radio"name="shape"value="area">AREA
+        <input type="radio"name="shape"value="volume">VOLUME<BR>
+    연산결과<input type="text"name="volume"id="result">
+    <button onclick="calc()">계산</button>
+</body>
+</html>
