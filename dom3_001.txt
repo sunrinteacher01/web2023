@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <script>
+        function addNode(t) {
+               //
+        }
+    </script>
+    </head>
+<body>
+    
+<div id="target" onclick="addNode('동적으로 텍스트가 추가됩니다.')"
+    style="font: 20px italic;">여기를 클릭하세요.</div>
+</body>
+</html>
