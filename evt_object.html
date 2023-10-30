@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div id="special" style="background-color:#faea11; width:200px; height:50px;">
+        마우스를 올려주세요!</div>
+    <script>
+        let obj = document.getElementById("special");
+        obj.onmouseover = function (e) {
+            x = e.clientX;
+            y = e.clientY;
+            alert(x + " " + y);
+            alert(e.type);
+            alert(e.target);
+        };
+    </script>
+</body>
+
+</html>

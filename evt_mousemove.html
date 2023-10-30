@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #img1 {
+            width: 200px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="summer.jpeg" onmousemove="sub(event)"><br>
+    <p id="test"></p>
+    <script>
+        function sub(e) {
+            let x = e.clientX;
+            let y = e.clientY;
+            let coor = "좌표: (" + x + "," + y + ")";
+            document.getElementById("test").innerHTML = coor;
+        }
+    </script>
+</body>
+
+</html>

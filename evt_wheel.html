@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #div1 {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="div1">이 텍스트 위에서 마우스 휠을 움직이면 폰트가 증가하거나 감소합니다.</div>
+    <script>
+        document.getElementById("div1").addEventListener("wheel", sub);
+        let size = 30;
+        function sub(e) {
+            if (e.wheelDelta > 0)
+                size++;
+            else
+                size--;
+            this.style.fontSize = size + "px";
+        }
+    </script>
+
+</body>
+
+</html>

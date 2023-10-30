@@ -1,0 +1,21 @@
+﻿<html>
+<head>
+    <script>
+        function OnMouseIn(elem) 
+
+            {
+                elem.style.border = "2px solid red";
+            }
+            function OnMouseOut(elem) 
+            {
+                elem.style.border = "";
+            }
+    </script>
+</head>
+<body>
+    <div style="background-color: yellow; width: 200px"
+        onmouseover="OnMouseIn (this)" onmouseout="OnMouseOut (this)">
+        마우스를 이 요소 위에 이동하세요.
+    </div>
+</body>
+</html>
