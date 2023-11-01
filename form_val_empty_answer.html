@@ -1,0 +1,18 @@
+﻿<script>
+
+    function checkNotEmpty(field) {
+        if (field.value.length == 0) {
+            alert("필드가 비어있네요!");
+            field.focus();
+            return false;
+        }
+        return true;
+
+    }
+</script>
+<form>
+    이름:    <input type='text' id='user' />
+    <input type='button'
+        onclick="checkNotEmpty(document.getElementById('user'))"
+        value='확인' />
+</form>
