@@ -1,0 +1,48 @@
+﻿<html>
+<head>
+
+    <script>
+        let expression="";
+
+        function add(//) {
+            expression = expression + character;
+
+                       //
+        }
+        function compute() {
+            document.getElementById("display").value = //;
+        }
+        function clearDisplay() {
+            expression = "";
+            //
+        }
+    </script>
+
+</head>
+<body>
+    <form>
+        display <input id="display" value="0" size="30">
+        <br>
+        <input type="button" value="    7    " onclick="add('7')">
+        <input type="button" value="    8    " onclick="add('8')">
+        <input type="button" value="    9    " onclick="add('9')">
+        <input type="button" value="    /    " onclick="add('/')">
+        <br>
+        <input type="button" value="    4    " onclick="add('4')">
+        <input type="button" value="    5    " onclick="add('5')">
+        <input type="button" value="    6    " onclick="add('6')">
+        <input type="button" value="    *    " onclick="add('*')">
+        <br>
+        <input type="button" value="    1    " onclick="add('1')">
+        <input type="button" value="    2    " onclick="add('2')">
+        <input type="button" value="    3    " onclick="add('3')">
+        <input type="button" value="    -    " onclick="add('-')">
+        <br>
+        <input type="button" value="    0    " onclick="add('0')">
+        <input type="button" value="    +    " onclick="add('+')">
+        <br>
+        <input type="button" value="  Clear  " onclick="clearDisplay()">
+        <input type="button" value="   Enter    " name="enter" onclick="compute()">
+    </form>
+</body>
+</html>
