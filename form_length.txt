@@ -1,0 +1,18 @@
+<script>
+    function checkLength(elem, min, max) {
+        let s = elem.value;
+        if (//) {
+            return true;
+        } else {
+            alert(min + " 문자와 " + max + " 문자 사이로 입력해주세요!");
+            //
+            return false;
+        }
+    }
+</script>
+<form>
+    이름(6-8 문자): <input type='text' id='name' />
+    <input type='button'
+        onclick="checkLength(document.getElementById('name'), 6, 8)"
+        value='확인' />
+</form>
