@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p>1부터 100 사이의 정수를 입력하시오.</p>
+    <input id="test">
+    <button type="button" onclick="sub()">제출</button>
+    <p id="result"></p>
+    <script>
+        function sub() {
+            let value = document.getElementById("test").value;
+            let s;
+            if (//) {
+                s = "입력값이 올바르지 않습니다.";
+            } else {
+                s = "올바른 입력값입니다.";
+            }
+            document.getElementById("result").innerHTML = s;
+        }
+    </script>
+</body>
+</html>
