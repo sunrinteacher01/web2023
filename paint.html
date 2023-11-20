@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<style>
+#myCanvas {
+background-color:rgb(241, 239, 209);
+border: 1px dotted blue;
+}
+</style>
+<body>
+<button onclick="context.clearRect(0, 0, canvas.width, canvas.height);">화면 지우기</button><br>
+<canvas id="myCanvas" width="600" height="400"></canvas>
+<script>
+let canvas = document.getElementById("myCanvas");
+let context = canvas.getContext("2d");
+let last_x = 0, last_y = 0;
+let draw_mode = false;
+canvas.addEventListener("mousemove", function (event) {
+if (!draw_mode) return;
+let x = event.offsetX;
+let y = event.offsetY;
+context.lineTo(x, y);
+context.stroke();
+last_x = x;
+last_y = y;
+});
+canvas.addEventListener("mousedown", function (event) {
+last_x = event.offsetX;
+last_y = event.offsetY;
+context.beginPath();
+context.moveTo(last_x, last_y);
+draw_mode = true;
+});
+canvas.addEventListener("mouseup", function (event) {
+draw_mode = false;
+});
+canvas.addEventListener("mouseout", function (event) {
+draw_mode = false;
+});
+</script>
